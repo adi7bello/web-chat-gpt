@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat GPT Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Chat GPT</h1>
+
+    <!-- Accordion Referensi Perintah -->
+    <div class="accordion">
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(event)">Referensi Perintah</div>
+        <div class="accordion-content">
+          <form id="commandForm" class="command-form">
+            <div class="form-group">
+              <textarea id="commandInput" class="form-input" placeholder="Enter commands here..."></textarea>
+            </div>
+            <button type="submit" class="form-button">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bagian Formulir API Key dan Percakapan AI -->
+    <div id="chatbox"></div>
+    <form id="apiKeyForm">
+      <input type="text" id="apiKeyInput" placeholder="Enter your API Key" required>
+      <button type="submit" id="apiKeySubmit">Submit</button>
+    </form>
+    <input type="text" id="userInput" placeholder="Type your message here..." autofocus>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
